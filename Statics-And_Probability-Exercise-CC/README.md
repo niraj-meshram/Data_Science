@@ -1,7 +1,12 @@
-﻿# Statics-And_Probability-Exercise-CC
+# Statistics and Probability Exercises
 
-Exercises and notebooks for this topic.
+Overview
+- Hands-on notebooks covering descriptive stats, distributions, outliers, similarity, and sampling.
+- Uses real datasets (e.g., Airbnb NYC, housing, height/weight) to build intuition.
 
-## Contents
+What It Does
+- Computes summary statistics, visualizes distributions, applies Z-scores and modified Z-score, and explores cosine similarity.
 
-See subfolders for individual projects. Each subfolder includes its own README.md with setup and run instructions.
+Run
+- Open notebooks in JupyterLab; data CSVs are included in this folder.
+

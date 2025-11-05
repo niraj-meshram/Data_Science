@@ -1,7 +1,13 @@
-﻿# Machine Learning
+# Machine Learning
 
-Classical ML algorithms, model training, and evaluation (see `Exercise/`).
+Overview
+- Classical ML exercises spanning preprocessing, model training, evaluation, and deployment.
+- Topics include regression, classification, ensembles, CV, and model serving.
 
-## Contents
+What It Contains
+- Individual exercises under `Exercise/` grouped by algorithm/technique.
+- Small end-to-end projects under `Exercise/PythonProject/`.
 
-See subfolders for individual projects. Each subfolder includes its own README.md with setup and run instructions.
+Run
+- Open notebooks in JupyterLab or run scripts as indicated in each subproject.
+

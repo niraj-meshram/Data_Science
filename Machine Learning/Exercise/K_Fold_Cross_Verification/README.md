@@ -1,38 +1,12 @@
-﻿# K_Fold_Cross_Verification
+# K‑Fold Cross‑Validation
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Evaluates model generalization by training/validating across multiple folds.
+- Reduces variance compared to a single train/test split.
 
-## Environment
+What It Does
+- Runs K‑Fold CV on sample datasets and reports mean/std of scores.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook and execute cells; adjust `n_splits`.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

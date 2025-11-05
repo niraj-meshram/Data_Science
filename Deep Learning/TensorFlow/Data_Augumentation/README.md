@@ -1,38 +1,13 @@
-﻿# Data_Augumentation
+# Data Augmentation for Images
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Demonstrates common image augmentation techniques to improve generalization.
+- Uses Keras `ImageDataGenerator` / `tf.image` on the flower_photos dataset.
 
-## Environment
+What It Does
+- Visualizes augmented samples and compares training with vs. without augmentation.
+- Tracks effects on accuracy and overfitting.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Place dataset under `data/` (if not included) and run the notebook in JupyterLab.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

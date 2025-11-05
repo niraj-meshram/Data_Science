@@ -1,7 +1,13 @@
-﻿# Deep Learning
+# Deep Learning
 
-TensorFlow-centric experiments, demos, and benchmarks.
+Overview
+- TensorFlow/Keras projects exploring core deep learning concepts and utilities.
+- Includes CNNs, regularization, training visualization, metrics, and GPUs.
 
-## Contents
+What It Contains
+- Self-contained notebooks per topic under `TensorFlow/`.
+- Each subfolder has its own README describing the goal and how to run.
 
-See subfolders for individual projects. Each subfolder includes its own README.md with setup and run instructions.
+How To Use
+- Open notebooks in JupyterLab and run cells top-to-bottom.
+

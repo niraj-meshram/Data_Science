@@ -1,38 +1,12 @@
-﻿# Gradient_Descent
+# Gradient Descent (Linear Models)
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Implements gradient descent for linear regression from scratch.
+- Explores batch vs. stochastic vs. mini‑batch updates.
 
-## Environment
+What It Does
+- Fits a line/plane to data by minimizing MSE; visualizes convergence and learning rate effects.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook or run the provided script as indicated.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

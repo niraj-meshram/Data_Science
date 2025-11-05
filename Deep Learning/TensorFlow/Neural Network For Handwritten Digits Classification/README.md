@@ -1,38 +1,12 @@
-﻿# Neural Network For Handwritten Digits Classification
+# Handwritten Digits Classification
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Classifies handwritten digits (MNIST‑like) using a neural network (MLP/CNN).
+- Demonstrates preprocessing, model architecture, and evaluation.
 
-## Environment
+What It Does
+- Trains on labeled digit images, reports accuracy and confusion matrix, and shows sample predictions.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook in JupyterLab and run all cells.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

@@ -1,38 +1,12 @@
-﻿# Hyper_Parameter_Tunning
+# Hyperparameter Tuning
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Systematically searches model hyperparameters using `GridSearchCV`/`RandomizedSearchCV`.
+- Demonstrates tuning for common estimators on digits/iris.
 
-## Environment
+What It Does
+- Defines a search space, runs cross‑validated search, and reports the best params and scores.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook and execute; adjust the parameter grid to explore.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

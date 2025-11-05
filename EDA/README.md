@@ -1,7 +1,12 @@
-﻿# EDA
+# EDA
 
-Exploratory Data Analysis notebooks and utilities.
+Overview
+- Exploratory Data Analysis notebooks on tabular datasets (cars, laptops, and more).
+- Focuses on data cleaning, feature understanding, distributions, correlations, and visualization.
 
-## Contents
+What It Does
+- Loads raw CSVs, performs profiling and visuals (histograms, pairplots, boxplots), and summarizes insights.
 
-See subfolders for individual projects. Each subfolder includes its own README.md with setup and run instructions.
+Run
+- Open the notebooks in JupyterLab and execute cells in order.
+

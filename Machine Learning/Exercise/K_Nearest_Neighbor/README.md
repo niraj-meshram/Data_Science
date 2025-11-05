@@ -1,38 +1,12 @@
-﻿# K_Nearest_Neighbor
+# K‑Nearest Neighbors (KNN)
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Instance-based learning that classifies/regresses based on nearest samples.
+- Sensitive to feature scaling and the choice of K.
 
-## Environment
+What It Does
+- Applies KNN to digits/iris datasets and compares accuracy across K values and distance metrics.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook and run; try different `n_neighbors` and `weights`.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

@@ -1,38 +1,12 @@
-﻿# Project_Banglore_Home_Prices
+# Bangalore Home Prices (ML Project)
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- End‑to‑end regression project predicting home prices in Bangalore.
+- Covers data cleaning, feature engineering, model training, and artifact export.
 
-## Environment
+What It Does
+- Trains a regression model on `bengaluru_house_prices.csv`, evaluates RMSE, and persists model/columns for serving.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook and execute; artifacts (`columns.json`, `.pickle`) are produced for the Flask server project.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

@@ -1,38 +1,15 @@
-﻿# Project_Celebrity_Image_Detection
+# Celebrity Image Detection
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Face recognition pipeline using deep face embeddings (e.g., FaceNet/ArcFace) and a classifier.
+- Detects a celebrity class for an input face image.
 
-## Environment
+What It Does
+- Extracts embeddings from face images and classifies them with a trained model; provides a Flask UI for inference.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Assets
+- Large weights and datasets are not committed. Place required `.h5`/`.pkl` files under `model/` and test images under `model/test_images/`.
 
-## Data
+Run
+- Install requirements, start the server (`server/server.py`), and open `ui/index.html` to test.
 
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.

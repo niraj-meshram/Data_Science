@@ -1,38 +1,12 @@
-﻿# Precision_Recall_F1
+# Precision, Recall, and F1
 
-Short description: TODO — summarize the goal, dataset, and approach.
+Overview
+- Explains classification metrics beyond accuracy, especially under class imbalance.
+- Shows how thresholds affect precision/recall trade‑off.
 
-## Environment
+What It Does
+- Computes precision, recall, F1, and plots PR curves; demonstrates threshold tuning.
 
-- Python 3.9+ recommended
-- Create a virtual environment
-  - Windows (PowerShell): python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
-- If present, install dependencies: pip install -r requirements.txt
+Run
+- Open the notebook and execute cells to generate metrics and plots.
 
-## Data
-
-- Expected location: data/ (or update if different)
-- Keep raw data out of Git; see .gitignore.
-
-## How to Run
-
-- Notebooks: open .ipynb in Jupyter/Lab and run cells.
-- Scripts: python script.py (update with the entry point).
-- Repro tip: set a random seed where applicable.
-
-## Project Structure
-
-- 
-otebooks/ or root .ipynb files
-- src/ or .py modules
-- models/, outputs/, uns/ for artifacts (gitignored)
-- README.md (this file)
-
-## Results
-
-- Record metrics, charts, and conclusions here.
-- Save plots to outputs/ and embed them.
-
-## References
-
-- Papers, tutorials, or datasets used.
