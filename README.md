@@ -68,3 +68,15 @@ A curated collection of notebooks and small projects across machine learning, de
 
 - Data files are not committed; place datasets under `data/` inside each project.
 - If you add new projects, copy a README template from an existing one.
+
+## Datasets and Assets
+
+- Keep large assets (datasets, model weights, archives) out of Git history by default; most are gitignored.
+- Recommended for large binaries: use Git LFS.
+  - `git lfs install`
+  - `git lfs track "*.h5" "*.pkl" "*.pt" "*.zip" "*.onnx"`
+  - Commit the generated `.gitattributes` and push normally.
+- Examples excluded here:
+  - `Deep Learning/TensorFlow/Data_Augumentation/datasets/flower_photos/`
+  - `Machine Learning/Exercise/PythonProject/Project_Celebrity_Image_Detection/model/*` weights and dataset
+- Alternative: add lightweight download scripts or links in each project README and keep only small samples under `data/sample/`.
