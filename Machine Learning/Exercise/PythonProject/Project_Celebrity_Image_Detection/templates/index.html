@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celebrity Face Recognition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+        }
+        .upload-box {
+            border: 2px dashed #aaa;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+            margin: 30px auto;
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        .upload-box:hover {
+            background-color: #f0f0f0;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Celebrity Face Recognition</h1>
+    <div class="upload-box" id="uploadBox">
+        <p>Drag & Drop an image here<br>or<br>Click to Upload</p>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+    <button onclick="uploadImage()">Predict Celebrity</button>
+
+    <div id="result"></div>
+
+    <script>
+        const uploadBox = document.getElementById('uploadBox');
+        const fileInput = document.getElementById('fileInput');
+        let selectedFile = null;
+
+        uploadBox.addEventListener('click', () => fileInput.click());
+
+        uploadBox.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadBox.style.backgroundColor = '#e0e0e0';
+        });
+
+        uploadBox.addEventListener('dragleave', () => {
+            uploadBox.style.backgroundColor = '#f9f9f9';
+        });
+
+        uploadBox.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadBox.style.backgroundColor = '#f9f9f9';
+            selectedFile = e.dataTransfer.files[0];
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            selectedFile = e.target.files[0];
+        });
+
+        function uploadImage() {
+            if (!selectedFile) {
+                alert("Please select an image first.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', selectedFile);
+
+            fetch('/upload_and_predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('result').innerText = "Error: " + data.error;
+                } else {
+                    document.getElementById('result').innerHTML = `
+                        Celebrity: <strong>${data.celebrity}</strong><br>
+                        Confidence: <strong>${data.confidence}%</strong>
+                    `;
+                }
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = "An error occurred.";
+                console.error(error);
+            });
+        }
+    </script>
+
+</body>
+</html>

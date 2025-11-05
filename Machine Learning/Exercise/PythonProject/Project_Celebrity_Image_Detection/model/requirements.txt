@@ -1,0 +1,9 @@
+PyWavelets
+opencv-python
+seaborn==0.8.1
+joblib
+flask
+DeepFace
+tf-keras
+scikit-learn
+certifi
